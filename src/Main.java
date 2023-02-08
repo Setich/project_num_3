@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        pascDecisionFourth();
+        pascDecisionTenth();
     }
 
 
@@ -43,8 +43,8 @@ public class Main {
 
         System.out.println("Введите число:");
         int number = sc.nextInt();
-        int result = 0;
-        for (int i = 1; result < number - 1; i++) {
+        int result = 1;
+        for (int i = 1; result < number; i++) {
             result = i * i;
             System.out.println(result);
         }
@@ -132,7 +132,7 @@ public class Main {
         System.out.println("Введите число:");
         int number = sc.nextInt();
         int result = 1;
-        for (int i = 1; i < number + 1; i++) {
+        for (int i = 1; i <= number; i++) {
             result *= i;
         }
         System.out.println(result);
@@ -163,7 +163,7 @@ public class Main {
         int fib3;
         int count = 3;
         System.out.print(fib1 + " " + fib2 + " ");
-        for (int i = 3; i < num + 1; i++) {
+        for (int i = 3; i <= num; i++) {
             fib3 = fib1 + fib2;
             System.out.print(fib3 + " ");
             fib1 = fib2;
@@ -175,7 +175,7 @@ public class Main {
         /* Возьмем любое натуральное число. Если оно четное - разделим его пополам, если нечетное - умножим на 3,
          прибавим 1 и разделим пополам. Повторим эти действия с вновь полученным числом. Гипотеза гласит,
          что независимо от выбора первого числа рано или поздно мы получим 1. */
-        for (int i = 20; i < 30 + 1; i++) {
+        for (int i = 20; i <= 30; i++) {
             int j = i;
             do {
                 if (j % 2 == 0) {
